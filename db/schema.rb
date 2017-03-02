@@ -10,6 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170302214529) do
+
+  create_table "nodes", force: :cascade do |t|
+    t.string   "text"
+    t.integer  "left_id"
+    t.integer  "right_id"
+    t.integer  "parent_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

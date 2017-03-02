@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyString
+  left_id: 1
+  right_id: 1
+  parent_id: 1
+
+two:
+  text: MyString
+  left_id: 1
+  right_id: 1
+  parent_id: 1
