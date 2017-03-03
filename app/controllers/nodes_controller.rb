@@ -1,10 +1,11 @@
 class NodesController < ApplicationController
   
   def index
-    
+    @nodes = nodes.paginate(page: params[:page])
   end
   
   def show
+    @node = Node.find(params[:id])
   end
   
   def new
