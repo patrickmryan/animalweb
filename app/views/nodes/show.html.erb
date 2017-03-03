@@ -2,11 +2,15 @@
   <aside class="col-md-4">
     <section class="node_info">
       <ul>
-        <li>id = <%= @node.id %>
-        <li>text = "<%= @node.text %>"
-        <li>left_id = <%= @node.left_id %>
-        <li>right_id = <%= @node.right_id %>
+        <li>id = <%= @node.id %></li>
+        <li>text = "<%= @node.text %>"</li>
+        <li>left_id = <%= @node.left_id %>, <%= link_to "yes", nodes_path + "/" + @node.left_id.to_s %></li>    
+        <li>right_id = <%= @node.right_id %>, <%= link_to "no", nodes_path + "/" + @node.right_id.to_s %></li>
         <li>parent_id = <%= @node.parent_id %>
+        <% if (@node.parent_id)	%>
+           	<%= link_to "parent", nodes_path + "/" + @node.parent_id.to_s %>
+        <% end %>   	
+        </li>
       </ul>
     </section>
   </aside>
