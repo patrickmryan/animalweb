@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+top = Node.new()
+top.text=("is it furry")
+top.save
+left = Node.new()
+left.text=("bear")
+left.save
+right = Node.new()
+right.text=("trout")
+right.save
+top.left_id=(left.id)
+top.right_id=(right.id)
+top.save
