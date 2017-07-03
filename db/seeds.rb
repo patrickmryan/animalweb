@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Add code to clean out or recreate the database.  Otherwise, new nodes will just get added
+# to existing database.  Code assumes that node 1 is the root.
+
 top = Node.new()
 top.text=("is it furry")
 top.save
