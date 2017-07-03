@@ -25,3 +25,4 @@ Things you may want to cover:
 
 * did hotfix
 * did hotfix2
+* issue 99 fixed
