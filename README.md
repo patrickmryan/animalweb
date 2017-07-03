@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-* fixed issue 53
+* fixed issue 53. more stuff.
