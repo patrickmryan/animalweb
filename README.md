@@ -24,4 +24,4 @@ Things you may want to cover:
 * ...
 
 * did hotfix
-* issue 99
+* issue 99 fixed
